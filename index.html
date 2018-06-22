@@ -72,6 +72,25 @@
 	section img{
 		width: 100%;
 	}
+	footer{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		font-family: 'kiroregular';
+		opacity: 0.8;
+		font-weight: light;
+	}
+	footer h5 {
+		font-size: 10pt;
+		font-style: italic;
+	}
+	footer .page-number{
+		font-size: 10pt;
+	}
+	@media print {
+    footer {page-break-after: always;}
+	}
 </style>
 <link rel="stylesheet" href="https://mienaikoe.github.io/fonts/kiroregular/stylesheet.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i|Roboto+Slab:400">
@@ -82,7 +101,7 @@
 	<div class="heading">
 		<h1> DesignThings: Water Thing </h1>
 		<p>
-			Hey team, I realize that we might be jumping the gun a little on making up our minds about the design of everything without having any input from the users. The point of the survey is to get an idea of who will be using our system. And we should use that information to inform how we’ll design.
+			Hey team, I realize that we might be jumping the gun a little on making up our minds about the design of everything without having any input from the users.
 		</p>
 	</div>
 	<h2>
@@ -114,5 +133,9 @@
 			The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
 		</p>
 	</section>
+	<footer>
+		<h5>DesignThings: Water Thing</h5>
+		<div class="page-number"> 1 </div>
+	</footer>
 </body>
 </html>
