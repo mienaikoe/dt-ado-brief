@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+  html{
+    background-color: #eee;
+  }
+	body{
+		margin: 0;
+		font-size: 10pt;
+		max-width: 6.5in;
+    min-height: 9in;
+		margin: 0 auto;
+    border: 1px solid black;
+    background-color: white;
+	}
+  .ill{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: .5in;
+    height: .5in;
+    margin: 0 auto;
+  }
+  #thirsty{
+    background-image: url('Thirsty.png');
+  }
+  #tapthat{
+    background-image: url('TapThat.png');
+  }
+  #clean{
+    background-image: url('Clean.png');
+  }
+  #germkill{
+    background-image: url('Germkill.png');
+  }
+  #bottle{
+    background-image: url('Bottle.png');
+  }
+  #trash{
+    background-image: url('Trash.png');
+  }
+  #barge{
+    background-image: url('Barge.png');
+  }
+  #plant{
+    background-image: url('Plant.png');
+  }
+
+  #flowchart{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 320px;
+    font-size: 5pt;
+    width: 100%;
+  }
+  .step{
+    text-align: center;
+    height: 50%;
+    width: 0.9in;
+    padding: .05in;
+    box-sizing: border-box;
+  }
+  .step.full{
+    height: 51%;
+  }
+
+  .transition{
+    height: 100%;
+  }
+  .transition::before, .transition::after{
+    display: block;
+    height: 50%;
+    width: 0.1in;
+    line-height: 160px;
+    font-size: 0.2in;
+    text-align: center;
+  }
+  .transition.both {
+    margin: 0 0.1in;
+  }
+  .transition.both::before{
+    content: '>';
+  }
+  .transition.both::after{
+    content: '>';
+  }
+  .transition.top::before{
+    content: '>';
+  }
+</style>
+<link rel="stylesheet" href="https://mienaikoe.github.io/fonts/kiroregular/stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i|Playfair+Display:700" rel="stylesheet">
+</head>
+<body>
+<div id="flowchart">
+
+    <div class="step full">
+      <div class='ill' id="thirsty" ></div>
+      <h2> Thirsty </h2>
+      <p> When you're thirsty, you get a drink </p>
+    </div>
+
+    <div class='transition both'></div>
+
+    <div class="step">
+      <div class='ill' id="bottle" ></div>
+      <h2> Bottle </h2>
+      <p> Some people get a bottle caus they suck. </p>
+    </div>
+    <div class="step">
+      <div class='ill' id="tapthat" ></div>
+      <h2> TapThat™ </h2>
+      <p> Some people get a TapThat caus they're awesome </p>
+    </div>
+
+    <div class='transition both'></div>
+
+    <div class="step">
+      <div class='ill' id="trash" ></div>
+      <h2> Trash </h2>
+      <p> People throw bottles in the trash or recycling </p>
+    </div>
+    <div class="step">
+      <div class='ill' id="germkill" ></div>
+      <h2> Cleaning </h2>
+      <p> TapThat will clean your shit </p>
+    </div>
+
+    <div class='transition top'></div>
+
+    <div class="step">
+      <div class='ill' id="barge" ></div>
+      <h2> Shipping </h2>
+      <p> Urban trash and recycling gets shipped off to far away places for handling. This is a huge contributor to greenhouse gases </p>
+    </div>
+    <div class="step"></div>
+
+    <div class='transition top'></div>
+
+    <div class="step">
+      <div class='ill' id="plant" ></div>
+      <h2> Processing / Landfill </h2>
+      <p> Plastic bottles get processed into new materials, or thrown into the landfill. </p>
+    </div>
+    <div class="step"></div>
+
+
+</body>
+</html>
