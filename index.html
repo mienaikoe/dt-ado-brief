@@ -4,23 +4,26 @@
 <style type="text/css">
 	body{
 		margin: 0;
-		font-size: 10pt;
 		max-width: 6.5in;
 		margin: 0 auto;
+		font-size: 10pt;
 	}
 	h1, h2{
+		color: #07A;
+		font-size: 1.5em;
+
 		/*
 		font-family: 'Playfair Display', serif;
 		*/
-		/*
-		font-family: 'Lato', sans;
-		*/
 
-		font-family: 'kiroregular', sans;
-		font-size: 1.2em;
+		font-family: 'Roboto Slab', sans;
+
+		/* font-family: 'kiroregular', sans;
+
 		text-transform: uppercase;
-		color: #07A;
+
 		letter-spacing: 0.2em;
+		*/
 	}
 	p{
 		font-size: 1em;
@@ -39,6 +42,7 @@
 	}
 	.heading p {
 		font-style: italic;
+		font-weight: normal;
 	}
 	section{
 		-moz-column-count: 2;
@@ -47,21 +51,20 @@
 		-webkit-column-gap: 20pt;
 		column-count: 2;
 		column-gap: 20pt;
-		margin-left: 12pt;
+		margin-left: 26pt;
 		margin-bottom: 2.5em;
 	}
 	h2 div{
 		display: inline-block;
 		vertical-align: middle;
 	}
-	h2 .fas{
+	h2 .fa{
 		width: 1em;
 		height: 1em;
 		line-height: 1em;
 		text-align: center;
 		color: #07A;
-		font-family: "Lato", sans;
-		margin-right: 8px;
+		margin-right: 0.5em;
 	}
 	section p:first-child{
 		margin-top: 0;
@@ -69,19 +72,40 @@
 	section img{
 		width: 100%;
 	}
+	footer{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		font-family: 'kiroregular';
+		opacity: 0.8;
+		font-weight: light;
+	}
+	footer h5 {
+		font-size: 10pt;
+		font-style: italic;
+	}
+	footer .page-number{
+		font-size: 10pt;
+	}
+	@media print {
+    footer {page-break-after: always;}
+	}
 </style>
 <link rel="stylesheet" href="https://mienaikoe.github.io/fonts/kiroregular/stylesheet.css">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i|Playfair+Display:700" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i|Roboto+Slab:400">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
 </head>
 <body>
 	<div class="heading">
 		<h1> DesignThings: Water Thing </h1>
 		<p>
-			Hey team, I realize that we might be jumping the gun a little on making up our minds about the design of everything without having any input from the users. The point of the survey is to get an idea of who will be using our system. And we should use that information to inform how we’ll design.
+			Hey team, I realize that we might be jumping the gun a little on making up our minds about the design of everything without having any input from the users.
 		</p>
 	</div>
 	<h2>
-		<div class="fas"></div>
+		<div class="fa fa-exclamation-circle"></div>
 		<div>Problem Statement</div>
 	</h2>
 	<section>
@@ -96,7 +120,10 @@
 			There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
 		</p>
 	</section>
-	<h2> Market Research </h2>
+	<h2>
+		<div class="fa fa-search"></div>
+		<div> Market Research </div>
+	</h2>
 	<section>
 		<p>
 			Where does it come from?
@@ -106,5 +133,9 @@
 			The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
 		</p>
 	</section>
+	<footer>
+		<h5>DesignThings: Water Thing</h5>
+		<div class="page-number"> 1 </div>
+	</footer>
 </body>
 </html>
