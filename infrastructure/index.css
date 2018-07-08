@@ -1,0 +1,80 @@
+
+.ill{
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: .5in;
+  height: .5in;
+  margin: 0 auto;
+}
+#thirsty{
+  background-image: url('Thirsty.png');
+}
+#tapthat{
+  background-image: url('TapThat.png');
+}
+#clean{
+  background-image: url('Clean.png');
+}
+#germkill{
+  background-image: url('Germkill.png');
+}
+#bottle{
+  background-image: url('Bottle.png');
+}
+#trash{
+  background-image: url('Trash.png');
+}
+#barge{
+  background-image: url('Barge.png');
+}
+#plant{
+  background-image: url('Plant.png');
+}
+
+#flowchart{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 7pt;
+  width: 3in;
+  /*
+  border: 1px solid black;
+  background-color: white;
+  */
+}
+.step{
+  text-align: center;
+  width: 50%;
+  height: 1.2in;
+  padding: .05in;
+  box-sizing: border-box;
+}
+.step.full{
+  width: 51%;
+}
+
+.step h2{
+  margin: .2em;
+}
+
+.step p{
+  margin: .2em;
+}
+
+.transition{
+  width: 100%;
+}
+.transition .fa{
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.transition .fa-exchange-alt{
+  transform: rotate(90deg);
+}

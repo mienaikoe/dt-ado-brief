@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-size: 9pt;
+  background-color: #eee;
+}
+
+/* each page */
+main{
+  width: 11in;
+  height: 8.5in;
+  margin: 0.5in auto;
+  background-color: white;
+  box-shadow: 0px 5px 30px rgba(0,0,0,0.5);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+article, figure{
+  padding: 0.5in 0.5in 0.75in;
+  margin: 0;
+}
+
+
+
+
+
+/* each text partition of a page */
+article{
+  flex: 1;
+  position: relative;
+  padding-right: 0.25in;
+  padding-left: 0.25in;
+}
+article:first-of-type{
+  padding-left: 0.5in;
+}
+article:last-of-type{
+  padding-right: 0.5in;
+}
+
+article section{
+  -moz-column-gap: 20pt;
+  -webkit-column-gap: 20pt;
+  column-gap: 20pt;
+  margin-left: 26pt;
+  margin-bottom: 2.5em;
+}
+
+section.col-2{
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+
+section.col-3{
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+}
+
+
+
+
+figure{
+  width: 4in;
+  background-color: hsla(182, 29%, 92%, 1)
+}
+
+figure img{
+  width: 100%;
+}
+
+
+section p{
+  font-size: 1em;
+  line-height: 1.4em;
+  font-family: 'kiroregular', sans;
+  font-weight: 300;
+  opacity: 0.9;
+  text-align: justify;
+}
+
+section p:first-child{
+  margin-top: 0;
+}
+
+
+
+h1, h2{
+  color: hsla(182, 29%, 40%, 1);
+  font-size: 1.5em;
+  margin: .75em 0;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Roboto Slab', sans;
+  /* font-family: 'kiroregular', sans;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  */
+}
+
+h2 div{
+  display: inline-block;
+  vertical-align: middle;
+}
+h2 .fa{
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  text-align: center;
+  margin-right: 0.5em;
+}
+
+
+
+/* CONTENT */
+.cover{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2in;
+  font-size: 16pt;
+}
+
+.links{
+  margin-top: 2em;
+  font-size: 7pt;
+}
+
+.links a{
+  margin: 0.5em 0;
+  display: block;
+  word-break: break-all;
+}
+
+
+
+/* FOOTEr */
+footer{
+  position: absolute;
+    bottom: 0.5in;
+    right: 0.5in;
+    left: 0.5in;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'kiroregular';
+  opacity: 0.8;
+  font-weight: light;
+}
+footer h5 {
+  font-size: 10pt;
+  font-style: italic;
+  margin: 0;
+}
+footer .page-number{
+  font-size: 10pt;
+}
+
+
+/* print */
+@media print {
+  body{
+    background-color: white;
+  }
+  main{
+    box-shadow: none;
+    margin: 0;
+    page-break-after: always;
+  }
+  footer {
+    display: none;
+  }
+}

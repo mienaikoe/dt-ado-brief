@@ -1,141 +1,203 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style type="text/css">
-	body{
-		margin: 0;
-		max-width: 6.5in;
-		margin: 0 auto;
-		font-size: 10pt;
-	}
-	h1, h2{
-		color: #07A;
-		font-size: 1.5em;
-
-		/*
-		font-family: 'Playfair Display', serif;
-		*/
-
-		font-family: 'Roboto Slab', sans;
-
-		/* font-family: 'kiroregular', sans;
-
-		text-transform: uppercase;
-
-		letter-spacing: 0.2em;
-		*/
-	}
-	p{
-		font-size: 1em;
-		line-height: 1.4em;
-		font-family: 'kiroregular', sans;
-		font-weight: 300;
-		opacity: 0.9;
-		text-align: justify;
-	}
-	.heading{
-		font-size: 14pt;
-		margin-bottom: 20pt;
-	}
-	.heading h1{
-		margin-bottom: 12pt;
-	}
-	.heading p {
-		font-style: italic;
-		font-weight: normal;
-	}
-	section{
-		-moz-column-count: 2;
-		-moz-column-gap: 20pt;
-		-webkit-column-count: 2;
-		-webkit-column-gap: 20pt;
-		column-count: 2;
-		column-gap: 20pt;
-		margin-left: 26pt;
-		margin-bottom: 2.5em;
-	}
-	h2 div{
-		display: inline-block;
-		vertical-align: middle;
-	}
-	h2 .fa{
-		width: 1em;
-		height: 1em;
-		line-height: 1em;
-		text-align: center;
-		color: #07A;
-		margin-right: 0.5em;
-	}
-	section p:first-child{
-		margin-top: 0;
-	}
-	section img{
-		width: 100%;
-	}
-	footer{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		font-family: 'kiroregular';
-		opacity: 0.8;
-		font-weight: light;
-	}
-	footer h5 {
-		font-size: 10pt;
-		font-style: italic;
-	}
-	footer .page-number{
-		font-size: 10pt;
-	}
-	@media print {
-    footer {page-break-after: always;}
-	}
-</style>
-<link rel="stylesheet" href="https://mienaikoe.github.io/fonts/kiroregular/stylesheet.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i|Roboto+Slab:400">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
+	<link rel="stylesheet" href="index.css" >
+	<link rel="stylesheet" href="infrastructure/index.css" >
+	<link rel="stylesheet" href="https://mienaikoe.github.io/fonts/kiroregular/stylesheet.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i|Roboto+Slab:400">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
 </head>
 <body>
-	<div class="heading">
+	<main class="cover">
 		<h1> DesignThings: Water Thing </h1>
 		<p>
 			Hey team, I realize that we might be jumping the gun a little on making up our minds about the design of everything without having any input from the users.
 		</p>
-	</div>
-	<h2>
-		<div class="fa fa-exclamation-circle"></div>
-		<div>Problem Statement</div>
-	</h2>
-	<section>
-		<p>
-			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-		</p>
-		<img src="https://previews.123rf.com/images/bloomua/bloomua1306/bloomua130600022/20378008-hand-drawn-illustration-of-mind-map-or-flowchart-with-space-for-your-text-isolated-on-white-backgrou.jpg" />
-		<p>
-			It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-		</p>
-		<p>
-			There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-		</p>
-	</section>
-	<h2>
-		<div class="fa fa-search"></div>
-		<div> Market Research </div>
-	</h2>
-	<section>
-		<p>
-			Where does it come from?
-			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-		</p>
-		<p>
-			The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-		</p>
-	</section>
-	<footer>
-		<h5>DesignThings: Water Thing</h5>
-		<div class="page-number"> 1 </div>
-	</footer>
+
+		<footer>
+			<h5>DesignThings: Water Thing</h5>
+			<div class="page-number"> 1 </div>
+		</footer>
+	</main>
+
+	<main>
+		<article class="text">
+			<h2>
+				<div class="fa fa-sitemap"></div>
+				<div>Infrastructure</div>
+			</h2>
+			<section class="col-2">
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+				<p>
+					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+				</p>
+				<p>
+					There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+				</p>
+			</section>
+		</article>
+
+		<figure>
+			<div id="flowchart">
+				<div class="step full">
+					<div class='ill' id="thirsty" ></div>
+					<h2> Thirsty </h2>
+					<p> When you're thirsty, you get a drink </p>
+				</div>
+
+				<div class='transition'>
+					<div class='fa fa-long-arrow-alt-down' ></div>
+					<div class='fa fa-exchange-alt' ></div>
+				</div>
+
+				<div class="step">
+					<div class='ill' id="bottle" ></div>
+					<h2> Bottle </h2>
+					<p> Some people get a bottle caus they suck. </p>
+				</div>
+				<div class="step">
+					<div class='ill' id="tapthat" ></div>
+					<h2> TapThat™ </h2>
+					<p> Some people get a TapThat caus they're awesome </p>
+				</div>
+
+				<div class='transition'>
+					<div class='fa fa-long-arrow-alt-down' ></div>
+					<div class='fa fa-exchange-alt' ></div>
+				</div>
+
+				<div class="step">
+					<div class='ill' id="trash" ></div>
+					<h2> Trash </h2>
+					<p> People throw bottles in the trash or recycling </p>
+				</div>
+				<div class="step">
+					<div class='ill' id="germkill" ></div>
+					<h2> Cleaning </h2>
+					<p> TapThat will clean your returned bottles and lend them out to the next person </p>
+				</div>
+
+				<div class='transition'>
+					<div class='fa fa-long-arrow-alt-down' ></div>
+				</div>
+
+				<div class="step">
+					<div class='ill' id="plant" ></div>
+					<h2> Processing / Landfill </h2>
+					<p> Plastic bottles get processed into new materials, or thrown into the landfill. </p>
+				</div>
+				<div class="step"></div>
+			</div>
+		</figure>
+
+		<footer>
+			<h5>DesignThings: Water Thing</h5>
+			<div class="page-number"> 2 </div>
+		</footer>
+	</main>
+
+	<main>
+		<article class="text">
+			<h2>
+				<div class="fa fa-search"></div>
+				<div> Market Research </div>
+			</h2>
+			<section class="col-2">
+				<p>
+					Where does it come from?
+					Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+				</p>
+				<p>
+					The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+				</p>
+			</section>
+		</article>
+
+		<figure>
+
+		</figure>
+
+		<footer>
+			<h5>DesignThings: Water Thing</h5>
+			<div class="page-number"> 3 </div>
+		</footer>
+	</main>
+
+	<main>
+		<article class="text">
+			<h2>
+				<div class="fa fa-lightbulb"></div>
+				<div> Education </div>
+			</h2>
+			<section class="">
+				<p>
+					Education often times is as important as recycling itself.  Our main target audience; people who care about the environment, recycle for the purpose of sustainability and others who are visiting the city or want to participate out of curiosity should be educated on what they are consuming and how they are affecting the environment.
+				</p>
+				<p>
+					Understanding why and how we are recycling, cleaning, and reusing provides transparency and educates people on our base values and target goals. Providing  statistics on how much less waste we are creating in comparison to the numbers provided by the city are all part of providing people with the knowledge on how we are impacting the environment. Part of the reason water fountains, water filtration systems and NYC tap water is not trusted is the lack of knowledge on the chemical components in the water. Another aspect of our transparent goal is by providing people with DEP safe drinking water requirements in comparison to our quarterly water testing results. Bottled water based on FDA regulations is not tested as often as tap water, with this in mind our main goal is to continuously test  the water we are providing to the people. The easiest form of education is by having pictures and posters at locations in the city with the most foot traffic, bus stops and subway stations. For the population who would like to do further research, they can find more information on our website and video of how it all came to be.
+				</p>
+				<p class="links">
+					<a href="https://www.fda.gov/Food/ResourcesForYou/Consumers/ucm046894.htm">
+						https://www.fda.gov/Food/ResourcesForYou/Consumers/ucm046894.htm
+					</a>
+					<a href="https://www.bottledwater.org/education/bottled-water-production/bottled-water-testing">
+						https://www.bottledwater.org/education/bottled-water-production/bottled-water-testing
+					</a>
+				</p>
+			</section>
+		</article>
+		<article class="text">
+			<h2>
+				<div class="fa fa-lightbulb"></div>
+				<div> Education </div>
+			</h2>
+			<section class="">
+				<p>
+					Education often times is as important as recycling itself.  Our main target audience; people who care about the environment, recycle for the purpose of sustainability and others who are visiting the city or want to participate out of curiosity should be educated on what they are consuming and how they are affecting the environment.
+				</p>
+				<p>
+					Understanding why and how we are recycling, cleaning, and reusing provides transparency and educates people on our base values and target goals. Providing  statistics on how much less waste we are creating in comparison to the numbers provided by the city are all part of providing people with the knowledge on how we are impacting the environment. Part of the reason water fountains, water filtration systems and NYC tap water is not trusted is the lack of knowledge on the chemical components in the water. Another aspect of our transparent goal is by providing people with DEP safe drinking water requirements in comparison to our quarterly water testing results. Bottled water based on FDA regulations is not tested as often as tap water, with this in mind our main goal is to continuously test  the water we are providing to the people. The easiest form of education is by having pictures and posters at locations in the city with the most foot traffic, bus stops and subway stations. For the population who would like to do further research, they can find more information on our website and video of how it all came to be.
+				</p>
+				<p class="links">
+					<a href="https://www.fda.gov/Food/ResourcesForYou/Consumers/ucm046894.htm">
+						https://www.fda.gov/Food/ResourcesForYou/Consumers/ucm046894.htm
+					</a>
+					<a href="https://www.bottledwater.org/education/bottled-water-production/bottled-water-testing">
+						https://www.bottledwater.org/education/bottled-water-production/bottled-water-testing
+					</a>
+				</p>
+			</section>
+		</article>
+		<article class="text">
+			<h2>
+				<div class="fa fa-lightbulb"></div>
+				<div> Education </div>
+			</h2>
+			<section class="">
+				<p>
+					Education often times is as important as recycling itself.  Our main target audience; people who care about the environment, recycle for the purpose of sustainability and others who are visiting the city or want to participate out of curiosity should be educated on what they are consuming and how they are affecting the environment.
+				</p>
+				<p>
+					Understanding why and how we are recycling, cleaning, and reusing provides transparency and educates people on our base values and target goals. Providing  statistics on how much less waste we are creating in comparison to the numbers provided by the city are all part of providing people with the knowledge on how we are impacting the environment. Part of the reason water fountains, water filtration systems and NYC tap water is not trusted is the lack of knowledge on the chemical components in the water. Another aspect of our transparent goal is by providing people with DEP safe drinking water requirements in comparison to our quarterly water testing results. Bottled water based on FDA regulations is not tested as often as tap water, with this in mind our main goal is to continuously test  the water we are providing to the people. The easiest form of education is by having pictures and posters at locations in the city with the most foot traffic, bus stops and subway stations. For the population who would like to do further research, they can find more information on our website and video of how it all came to be.
+				</p>
+				<p class="links">
+					<a href="https://www.fda.gov/Food/ResourcesForYou/Consumers/ucm046894.htm">
+						https://www.fda.gov/Food/ResourcesForYou/Consumers/ucm046894.htm
+					</a>
+					<a href="https://www.bottledwater.org/education/bottled-water-production/bottled-water-testing">
+						https://www.bottledwater.org/education/bottled-water-production/bottled-water-testing
+					</a>
+				</p>
+			</section>
+		</article>
+
+		<footer>
+			<h5>DesignThings: Water Thing</h5>
+			<div class="page-number"> 4 </div>
+		</footer>
+	</main>
 </body>
 </html>
