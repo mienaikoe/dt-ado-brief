@@ -106,12 +106,31 @@ section h2:first-child{
   margin-top: 0;
 }
 
+.heading{
+  margin-bottom: 6em;
+  border-top: 2px solid #777;
+}
+h1{
+  font-size: 4em;
+  margin: 0.6em 0 0;
+}
+
+h2{
+  font-size: 1.5em;
+  margin: .75em 0;
+}
+
+h3{
+  font-size: 1.5em;
+  font-weight: normal;
+  font-style: italic;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 0;
+}
 
 
 h1, h2{
   color: hsla(182, 29%, 40%, 1);
-  font-size: 1.5em;
-  margin: .75em 0;
   /* font-family: 'Playfair Display', serif; */
   font-family: 'Roboto Slab', sans;
   /* font-family: 'kiroregular', sans;
