@@ -70,7 +70,7 @@ section.col-3{
 
 
 figure{
-  width: 4.5in;
+  width: 5in;
   background-color: hsla(182, 29%, 92%, 1)
 }
 
@@ -81,7 +81,7 @@ figure img{
 
 section p, section ul{
   font-size: 1em;
-  line-height: 1.4em;
+  line-height: 1.3em;
   font-family: 'kiroregular', sans;
   font-weight: 300;
   opacity: 0.9;

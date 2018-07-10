@@ -14,13 +14,14 @@
 
 .step{
   text-align: center;
-  width: 50%;
+  width: 1.75in;
   height: auto;
   padding: 0 .05in;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  z-index: 5;
 }
 .step.full{
   width: 51%;
@@ -91,6 +92,9 @@
 #plant{
   background-image: url('Plant.png');
 }
+#return{
+  background-image: url('Return.png');
+}
 
 
 
@@ -101,26 +105,61 @@
   position: relative;
 }
 .transition .bar{
-  content: ' ';
   height: 0.35in;
   width: 0.25in;
   display: inline-block;
   background-color: hsla(182, 29%, 40%, 1);
   position: absolute;
   top: -.02in;
+  left: calc(50% - .4in - 0.175in);
   text-align: center;
 }
-.transition .bar:first-child{
-  left: calc(50% - .4in - 0.175in);
-}
-.transition .bar:last-child{
-  right: calc(50% - .4in - 0.175in);
-}
+
 .transition .bar .fa{
   font-size: 2em;
   line-height: 0.35in;
   color: white;
 }
-.transition .fa-exchange-alt{
-  transform: rotate(90deg);
+
+
+
+.transition .bar.double{
+  height: 1.1in;
+  border-left: 0.25in solid hsla(182, 29%, 40%, 1);
+  border-right: 0.25in solid hsla(182, 29%, 40%, 1);
+  width: 1.8in;
+  background-color: hsla(182, 29%, 91%, 1);
+  left: calc(50% + .4in - 0.075in);
+  text-align: left;
+}
+
+.transition .bar.double.up{
+  height: .35in;
+  border-bottom: 0.25in solid hsla(182, 29%, 40%, 1);
+  border-bottom-left-radius: 0.15in;
+  border-bottom-right-radius: 0.15in;
+  text-align: center;
+  position: relative;
+}
+
+.transition .bar.double.down{
+  border-top: 0.25in solid hsla(182, 29%, 40%, 1);
+  border-top-left-radius: 0.15in;
+  border-top-right-radius: 0.15in;
+  text-align: center;
+  position: relative;
+}
+
+.transition .bar.double.down .fa{
+  position: absolute;
+  top: -0.28in;
+}
+
+.transition .bar.double.up .fa{
+  position: absolute;
+  bottom: -0.29in;
+}
+
+.transition .bar.double .fa{
+  margin-left: -0.17in;
 }
