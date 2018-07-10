@@ -36,6 +36,9 @@ article{
   padding-right: 0.25in;
   padding-left: 0.25in;
 }
+article.weight-2{
+  flex: 2;
+}
 article:first-of-type{
   padding-left: 0.5in;
 }
@@ -47,7 +50,7 @@ article section{
   -moz-column-gap: 20pt;
   -webkit-column-gap: 20pt;
   column-gap: 20pt;
-  margin-left: 26pt;
+  /* margin-left: 26pt; */
   margin-bottom: 2.5em;
 }
 
@@ -76,16 +79,30 @@ figure img{
 }
 
 
-section p{
+section p, section ul{
   font-size: 1em;
   line-height: 1.4em;
   font-family: 'kiroregular', sans;
   font-weight: 300;
   opacity: 0.9;
   text-align: justify;
+  /*padding-left: 24pt;*/
 }
 
 section p:first-child{
+  margin-top: 0;
+}
+
+section ul{
+  padding-left: 12pt;
+}
+
+section h2{
+  margin-left: 0;
+  margin-top: 24pt;
+}
+
+section h2:first-child{
   margin-top: 0;
 }
 
@@ -118,14 +135,16 @@ h2 .fa{
 
 
 /* CONTENT */
+/*
 .cover{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 2in;
+  padding: 0.5in;
   font-size: 16pt;
 }
+*/
 
 .links{
   margin-top: 2em;
