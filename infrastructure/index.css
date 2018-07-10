@@ -1,14 +1,74 @@
 
+#flowchart{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 7pt;
+  /*
+  border: 1px solid black;
+  background-color: white;
+  */
+}
+
+.step{
+  text-align: center;
+  width: 50%;
+  height: auto;
+  padding: 0 .05in;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.step.full{
+  width: 51%;
+}
+.step.full .details{
+  display: none;
+  min-height: .8in;
+}
+
+
+.details{
+  flex: 1;
+}
+.details h2{
+  margin: .2em 0;
+}
+.details p{
+  margin: .2em 0;
+  /*display: none;*/
+}
+.details:first-child{
+  text-align: right;
+  margin-right: 0.075in;
+}
+.details:last-child{
+  text-align: left;
+  margin-left: 0.075in;
+}
+
+
+
 .ill{
-  background-size: contain;
+  background-size: .5in;
   background-position: center;
   background-repeat: no-repeat;
-  width: .5in;
-  height: .5in;
+  width: .8in;
+  height: .8in;
+  border-radius: .4in;
   margin: 0 auto;
+  border: 3px solid hsla(182, 29%, 40%, 1);
+  background-color: white;
+  flex-shrink: 0;
 }
 #thirsty{
   background-image: url('Thirsty.png');
+}
+#thirstyB{
+  background-image: url('ThirstyB.png');
 }
 #tapthat{
   background-image: url('TapThat.png');
@@ -32,49 +92,35 @@
   background-image: url('Plant.png');
 }
 
-#flowchart{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  font-size: 7pt;
-  width: 3in;
-  /*
-  border: 1px solid black;
-  background-color: white;
-  */
-}
-.step{
-  text-align: center;
-  width: 50%;
-  height: 1.2in;
-  padding: .05in;
-  box-sizing: border-box;
-}
-.step.full{
-  width: 51%;
-}
 
-.step h2{
-  margin: .2em;
-}
 
-.step p{
-  margin: .2em;
-}
 
 .transition{
   width: 100%;
+  height: 0.3in;
+  position: relative;
 }
-.transition .fa{
+.transition .bar{
+  content: ' ';
+  height: 0.35in;
+  width: 0.25in;
   display: inline-block;
-  width: 49%;
+  background-color: hsla(182, 29%, 40%, 1);
+  position: absolute;
+  top: -.02in;
   text-align: center;
-  font-size: 2em;
-  margin: 1em 0;
 }
-
+.transition .bar:first-child{
+  left: calc(50% - .4in - 0.175in);
+}
+.transition .bar:last-child{
+  right: calc(50% - .4in - 0.175in);
+}
+.transition .bar .fa{
+  font-size: 2em;
+  line-height: 0.35in;
+  color: white;
+}
 .transition .fa-exchange-alt{
   transform: rotate(90deg);
 }
