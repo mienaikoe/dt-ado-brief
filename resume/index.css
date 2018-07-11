@@ -1,0 +1,28 @@
+
+.resume .heading{
+  margin-bottom: 4em;
+}
+
+.human{
+  display: flex;
+  flex-direction: row;
+  -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+  margin-bottom: 1em;
+}
+
+.human .avatar{
+  width: 1in;
+  height: 1in;
+  border-radius: 0.5in;
+  background-size: cover;
+  background-position: top;
+}
+
+.human .details{
+  flex: 1;
+  margin-left: 1em;
+}
+
+.human .details h2{
+  margin-bottom: 0.1em;
+}
