@@ -109,7 +109,7 @@ section h2:first-child{
 
 .heading{
   margin-bottom: 6em;
-  border-top: 2px solid #777;
+  border-top: 0.05in solid black;
 }
 h1{
   font-size: 4em;
