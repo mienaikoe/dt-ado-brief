@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+h4<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" href="index.css" >
@@ -89,53 +89,41 @@
 		<figure>
 			<div id="flowchart">
 
-				<div class="step">
-					<div class="details">
-						<h2> Creation </h2>
-						<p> Bottles are made from virgin plastic </p>
-					</div>
-					<div class='ill' id="bottle" ></div>
+				<div class="flowhead">
+					<h2> Existing Model </h2>
+					<h2> Proposed Model </h2>
 				</div>
-				<div class="step"></div>
+
+				<div class="steps">
+					<div class="step">
+						<div class="details">
+							<h4> Creation </h4>
+							<p> Bottles are made from virgin plastic </p>
+						</div>
+						<div class='ill' id="bottle" ></div>
+					</div>
+					<div class="step"></div>
+				</div>
 
 				<div class='transition'>
 					<div class='bar'><div class='fa fa-long-arrow-alt-down' ></div></div>
 					<div class='bar double down'><div class='fa fa-long-arrow-alt-left' ></div></div>
 				</div>
 
-
-				<div class="step">
-					<div class="details">
-						<h2> Shipping </h2>
-						<p> Full bottles are shipped to various cities </p>
+				<div class="steps">
+					<div class="step">
+						<div class="details">
+							<h4> Shipping </h4>
+							<p> Full bottles are shipped to various cities </p>
+						</div>
+						<div class='ill' id="barge" ></div>
 					</div>
-					<div class='ill' id="barge" ></div>
-				</div>
-				<div class="step">
-					<div class='ill' id="germkill" ></div>
-					<div class="details">
-						<h2> Cleaning </h2>
-						<p> THEBottle stations clean used bottles. </p>
-					</div>
-				</div>
-
-				<div class='transition'>
-					<div class='bar'><div class='fa fa-long-arrow-alt-down' ></div></div>
-					<div class='bar double'><div class='fa fa-long-arrow-alt-down' ></div></div>
-				</div>
-
-				<div class="step">
-					<div class="details">
-						<h2> Purchase </h2>
-						<p> Thirsty New Yorkers usually choose plastic </p>
-					</div>
-					<div class='ill' id="thirsty" ></div>
-				</div>
-				<div class="step">
-					<div class='ill' id="thirsty" ></div>
-					<div class="details">
-						<h2> THEBottle </h2>
-						<p> Now they have a new option </p>
+					<div class="step">
+						<div class='ill' id="germkill" ></div>
+						<div class="details">
+							<h4> Cleaning </h4>
+							<p> THEBottle stations clean used bottles. </p>
+						</div>
 					</div>
 				</div>
 
@@ -144,18 +132,42 @@
 					<div class='bar double'><div class='fa fa-long-arrow-alt-down' ></div></div>
 				</div>
 
-				<div class="step">
-					<div class="details">
-						<h2> Trash </h2>
-						<p> Plastic bottles end up in the trash or recycling </p>
+				<div class="steps">
+					<div class="step">
+						<div class="details">
+							<h4> Purchase </h4>
+							<p> Thirsty New Yorkers usually choose plastic </p>
+						</div>
+						<div class='ill' id="thirsty" ></div>
 					</div>
-					<div class='ill' id="trash" ></div>
+					<div class="step">
+						<div class='ill' id="thirsty" ></div>
+						<div class="details">
+							<h4> THEBottle </h4>
+							<p> Thirsty New Yorkers can opt for a cleaner option </p>
+						</div>
+					</div>
 				</div>
-				<div class="step">
-					<div class='ill' id="return" ></div>
-					<div class="details">
-						<h2> Return </h2>
-						<p> Users return THEBottle to stations, stopping waste. </p>
+
+				<div class='transition'>
+					<div class='bar'><div class='fa fa-long-arrow-alt-down' ></div></div>
+					<div class='bar double'><div class='fa fa-long-arrow-alt-down' ></div></div>
+				</div>
+
+				<div class="steps">
+					<div class="step">
+						<div class="details">
+							<h4> Trash </h4>
+							<p> Plastic bottles end up in the trash or recycling </p>
+						</div>
+						<div class='ill' id="trash" ></div>
+					</div>
+					<div class="step">
+						<div class='ill' id="return" ></div>
+						<div class="details">
+							<h4> Return </h4>
+							<p> Users return THEBottle to stations, stopping waste. </p>
+						</div>
 					</div>
 				</div>
 
@@ -164,27 +176,31 @@
 					<div class='bar double up'><div class='fa fa-long-arrow-alt-right' ></div></div>
 				</div>
 
-				<div class="step">
-					<div class="details">
-						<h2> Shipping </h2>
-						<p> Recycled or landfill materials get shipped across the globe. </p>
+				<div class="steps">
+					<div class="step">
+						<div class="details">
+							<h4> Shipping </h4>
+							<p> Recycled or landfill materials get shipped across the globe. </p>
+						</div>
+						<div class='ill' id="barge" ></div>
 					</div>
-					<div class='ill' id="barge" ></div>
+					<div class="step"></div>
 				</div>
-				<div class="step"></div>
 
 				<div class='transition'>
 					<div class='bar'><div class='fa fa-long-arrow-alt-down' ></div></div>
 				</div>
 
-				<div class="step">
-					<div class="details">
-						<h2> Processing / Landfill </h2>
-						<p> Plastic bottles get processed into new materials, or thrown into the landfill. </p>
+				<div class="steps">
+					<div class="step">
+						<div class="details">
+							<h4> Processing </h4>
+							<p> Plastic bottles are recycled into new products or enter a landfill. </p>
+						</div>
+						<div class='ill' id="plant" ></div>
 					</div>
-					<div class='ill' id="plant" ></div>
+					<div class="step"></div>
 				</div>
-				<div class="step"></div>
 
 			</div>
 		</figure>
