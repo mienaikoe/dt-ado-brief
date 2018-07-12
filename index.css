@@ -121,6 +121,10 @@ h1{
   margin: 0.6em 0 0;
 }
 
+h1 .unterscrift{
+  font-size: 0.5em;
+}
+
 h2{
   font-size: 1.5em;
   margin: .75em 0;
@@ -180,6 +184,34 @@ h2 .fa{
   margin: 0.5em 0;
   display: block;
   word-break: break-all;
+}
+
+
+.goal-list{
+  font-size: 10pt;
+  counter-reset: my-badass-counter;
+}
+
+.goal-list ul{
+  text-align: left;
+}
+
+.goal-list dt span{
+  font-size: 1.3em;
+  margin-top: .6em;
+  margin-left: 2em;
+  display: inline-block;
+}
+
+.goal-list dt:before{
+  content: counter(my-badass-counter);
+	counter-increment: my-badass-counter;
+  font-size: 3.5em;
+  position: absolute;
+}
+
+.goal-list dl{
+  margin-bottom: 2em;
 }
 
 
