@@ -237,6 +237,7 @@ h2 .fa{
 .bottle-comparison tbody td:first-child{
   background-color: hsla(182, 29%, 40%, 1);
   color: white;
+  font-weight: bold;
 }
 
 .bottle-comparison tbody td:first-child span{
@@ -276,12 +277,12 @@ footer{
   justify-content: space-between;
   align-items: center;
   font-family: 'kiroregular';
-  opacity: 0.8;
   font-weight: light;
 }
 footer h5 {
   font-size: 1em;
   font-style: italic;
+  font-weight: normal;
   margin: 0;
 }
 footer .page-number{
@@ -301,6 +302,6 @@ footer .page-number{
     page-break-after: always;
   }
   footer {
-    display: none;
+
   }
 }
