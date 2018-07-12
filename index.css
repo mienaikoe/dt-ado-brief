@@ -50,7 +50,7 @@ article:last-of-type{
 article section{
   -moz-column-gap: 20pt;
   -webkit-column-gap: 20pt;
-  column-gap: 20pt;
+  column-gap: 1.5em;
   /* margin-left: 26pt; */
   margin-bottom: 2.5em;
 }
