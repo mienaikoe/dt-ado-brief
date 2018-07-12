@@ -76,6 +76,10 @@ figure{
   background-color: hsla(182, 29%, 92%, 1)
 }
 
+figure.thin{
+  width: 3in;
+}
+
 figure img{
   width: 100%;
 }
