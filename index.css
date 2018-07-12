@@ -77,7 +77,11 @@ figure{
 }
 
 figure.thin{
-  width: 3in;
+  width: 3.5in;
+}
+
+figure h2{
+  text-align: center;
 }
 
 figure img{
@@ -210,9 +214,53 @@ h2 .fa{
   position: absolute;
 }
 
-.goal-list dl{
-  margin-bottom: 2em;
+.goal-list dt{
+  margin-top: 0.5in;
 }
+
+
+.bottle-comparison{
+  border-collapse: collapse;
+}
+.bottle-comparison, .bottle-comparison th, .bottle-comparison td{
+  border: 1px solid black;
+}
+
+.bottle-comparison thead{
+  background-color: hsla(182, 29%, 40%, 1);
+  color: white;
+  height: 0.2in;
+  line-height: 0.2in;
+}
+
+.bottle-comparison tbody td:first-child{
+  background-color: hsla(182, 29%, 40%, 1);
+  color: white;
+}
+
+.bottle-comparison tbody td:first-child span{
+  transform: rotate(270deg);
+  display: block;
+  width: 0.2in;
+}
+
+.bottle-comparison tbody td{
+
+}
+
+.bottle-comparison ul{
+  text-align: left;
+  padding: 0.3em;
+}
+
+.bottle-comparison li{
+  display: block;
+}
+
+.bottle-comparison li::before{
+  content: '▸ ';
+}
+
 
 
 
