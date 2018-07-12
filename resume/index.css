@@ -3,11 +3,25 @@
   margin-bottom: 4em;
 }
 
+.resume .backer{
+  background-image: url('logo.jpg');
+  background-size: 12in;
+  background-position: 0in -1in;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
 .human{
   display: flex;
   flex-direction: row;
   -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
   margin-bottom: 1em;
+  height: 1.7in;
 }
 
 .human .avatar{
