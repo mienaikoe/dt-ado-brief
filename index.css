@@ -264,6 +264,85 @@ h2 .fa{
 }
 
 
+#concept{
+  position: relative;
+}
+
+#concept img{
+  width: 70%;
+  margin-left: 0.95in;
+  display: block;
+}
+
+.callout{
+  position: absolute;
+  width: 80px;
+}
+
+.callout::after{
+  content: ' ';
+  border-bottom: 1px solid #333;
+  position: absolute;
+}
+
+.callout h4{
+  border-bottom: 1px solid #333;
+  padding: 4px 0;
+  margin: 0;
+}
+
+.callout p {
+  margin: 4px 0;
+}
+
+#dispenser-callout{
+  top: 2.9in;
+  left: 0.5in;
+  text-align: right;
+}
+#dispenser-callout::after{
+  width: 0.6in;
+  top: 0.37in;
+  left: 0.79in;
+  transform: rotate(30deg);
+}
+
+#bottle-callout{
+  top: 2.8in;
+  right: 0.5in;
+  text-align: left;
+}
+#bottle-callout::after{
+  width: 1.3in;
+  top: 0.50in;
+  right: 0.77in;
+  transform: rotate(-25deg);
+}
+
+#fountain-callout{
+  top: 4.8in;
+  right: 0.5in;
+}
+#fountain-callout::after {
+    width: 0.5in;
+    transform: rotate(70deg);
+    top: 0;
+    right: 0.67in;
+}
+
+#deposit-callout{
+  top: 4.5in;
+  text-align: right;
+}
+
+#deposit-callout::after{
+  width: 0.5in;
+  left: 0.77in;
+  top: 0.39in;
+  transform: rotate(40deg);
+}
+
+
 
 
 /* FOOTEr */
