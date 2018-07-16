@@ -24,6 +24,10 @@
   height: 1.7in;
 }
 
+.jesse{
+  display: none;
+}
+
 .human .avatar{
   width: 1in;
   height: 1in;
